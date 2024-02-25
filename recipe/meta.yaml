@@ -1,5 +1,5 @@
 {% set name = "capsula" %}
-{% set version = "0.1.1" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/capsula-{{ version }}.tar.gz
-  sha256: 34fe7d37e1e6a580785b842c53a27b4ba1a0e7bf74c721ce75833abb00c29d30
+  sha256: 75c1cf245e40d484cb341315e0e3a1bea22264b4deec61212da55c7d411fdbf4
 
 build:
   noarch: python
@@ -28,6 +28,9 @@ requirements:
     - tomli >=2.0.1
     - typing-extensions >=4.7.1
     - orjson >=3.9.10
+    - typer >= 0.9.0
+    - rich >= 13.7.0
+    - eval-type-backport >= 0.1.3 # This is not available on conda-forge
 
 test:
   imports:
