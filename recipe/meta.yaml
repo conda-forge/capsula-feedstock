@@ -21,7 +21,6 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - pydantic >=2.0.2
     - py-cpuinfo >=9.0.0
     - gitpython >=3.1.31
     - tomli >=2.0.1
