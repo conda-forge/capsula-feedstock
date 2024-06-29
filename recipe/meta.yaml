@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/capsula-{{ version }}.tar.gz
-  sha256: a094066470849b8e79d8ef4df3a0b69ca14a7ea7f40d1dab56d6774898316a08
+  sha256: ee5132d13f6739599825d4b0ffefc5684f449efe5ff4fd857ce54599777d54dd
 
 build:
   noarch: python
