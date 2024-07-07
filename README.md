@@ -9,6 +9,10 @@ Package license: MIT
 
 Summary: A Python package to capture function execution contexts
 
+Development: https://github.com/shunichironomura/capsula
+
+Documentation: https://shunichironomura.github.io/capsula/
+
 Current build status
 ====================
 
