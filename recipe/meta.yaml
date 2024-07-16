@@ -1,5 +1,5 @@
 {% set name = "capsula" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/capsula-{{ version }}.tar.gz
-  sha256: 69b846044c0c62cb30cd3ac095bef4cf0ec7da6d15f03a051c91e29bf155eae6
+  sha256: 429139406a60ae0d7d114066945b7612db623881aca621a87b7f29a1e3c63f9e
 
 build:
   noarch: python
@@ -40,7 +40,7 @@ test:
 about:
   home: https://github.com/shunichironomura/capsula
   summary: A Python package to capture function execution contexts
-  license: MIT
+  license: MIT AND PSF-2.0
   license_file: LICENSE
   doc_url: https://shunichironomura.github.io/capsula/
   dev_url: https://github.com/shunichironomura/capsula

@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/capsula-feedsto
 
 Home: https://github.com/shunichironomura/capsula
 
-Package license: MIT
+Package license: MIT AND PSF-2.0
 
 Summary: A Python package to capture function execution contexts
 
