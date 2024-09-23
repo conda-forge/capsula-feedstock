@@ -1,5 +1,5 @@
 {% set name = "capsula" %}
-{% set version = "0.5.1" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/capsula-{{ version }}.tar.gz
-  sha256: 429139406a60ae0d7d114066945b7612db623881aca621a87b7f29a1e3c63f9e
+  sha256: 1af1a5658f1aad09296b1b037c48086e064e4d6f6b7e3aa3b74c4c50347cd6f2
 
 build:
   noarch: python
@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - python >=3.8
-    - poetry-core
+    - hatchling
     - pip
   run:
     - python >=3.8
