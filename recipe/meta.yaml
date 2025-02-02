@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/capsula-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/capsula-{{ version }}.tar.gz
   sha256: 1af1a5658f1aad09296b1b037c48086e064e4d6f6b7e3aa3b74c4c50347cd6f2
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - hatchling
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - py-cpuinfo >=9.0.0
     - gitpython >=3.1.31
     - tomli >=2.0.1
@@ -36,6 +36,7 @@ test:
   requires:
     - pip
     - git
+    - python {{ python_min }}
 
 about:
   home: https://github.com/shunichironomura/capsula
