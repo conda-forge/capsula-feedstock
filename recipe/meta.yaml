@@ -1,5 +1,5 @@
 {% set name = "capsula" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/capsula-{{ version }}.tar.gz
-  sha256: 8ec2e86b3883645ba531bf3177f3872136912487c662f7ad36be745fdac07407
+  sha256: 14a3e7e1e0becb0e0747eded993b5db194b7b34c7c5fc86dadb9bd16586cf06a
 
 build:
   noarch: python
